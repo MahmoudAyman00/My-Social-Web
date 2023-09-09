@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #a2a2a2;
+    height: 613px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.profile{
+    background-image: url(../Media/Myphoto.jpg);
+    background-size: cover;
+    margin: 10px auto;
+    border-radius: 50%; 
+    border: 2px solid #4d698e;
+    width: 330px;
+    height: 330px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.box{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+        margin-left: auto;
+            margin-right: auto;
+}
+
+.box .One{
+    width: calc(100% / 4);
+    margin-bottom: 20px;
+}
+.box .Two{
+    width: 75px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#4d698e ;
+width: calc(100% + 220px) ;
+height: 65px;
+}
+
+footer img{
+    width: 50px;
+    display: inline;
+}
+footer p{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+@media (max-width:768px){
+    .box {
+            margin-left: 0;
+            flex-direction: column;
+        }
+}
